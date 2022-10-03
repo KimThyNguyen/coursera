@@ -1,0 +1,23 @@
+#header-nav {
+	margin-right: 0px;
+	margin-left: 0px;
+	padding-left: 0px;
+	padding-right: 0px;
+}
+
+#header-nav > a {
+	margin-left: 10px;
+}
+
+#navbarSupportedContent {
+	margin-right: 0px;
+	margin-left: 0px;
+}
+
+#navbarSupportedContent a {
+	font-weight: bold;
+}
+
+button {
+	margin-right: 10px;
+}
