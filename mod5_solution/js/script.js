@@ -114,15 +114,16 @@ function buildAndShowHomeHTML (categories) {
       // Hint: you need to surround the chosen category short name with something before inserting
       // it into the home html snippet.
       //
-      var homeHtmlToInsertIntoMainPage = "<div>"+chosenCategoryShortName.name+"</div>"
 
+      var homeHtmlToInsertIntoMainPage = insertProperty(homeHtml, 
+        "randomCategoryShortName", 
+        chosenCategoryShortName.short_name);
 
       // TODO: STEP 4: Insert the produced HTML in STEP 3 into the main page
       // Use the existing insertHtml function for that purpose. Look through this code for an example
       // of how to do that.
       // ....
-      //insertHtml("#main-content",homeHtmlToInsertIntoMainPage)
-
+      insertHtml("#main-content", homeHtmlToInsertIntoMainPage)
     },
     false); // False here because we are getting just regular HTML from the server, so no need to process JSON.
 }
@@ -150,6 +151,7 @@ dc.loadMenuCategories = function () {
 // Load the menu items view
 // 'categoryShort' is a short_name for a category
 dc.loadMenuItems = function (categoryShort) {
+  console.log(menuItemsUrl + categoryShort)
   showLoading("#main-content");
   $ajaxUtils.sendGetRequest(
     menuItemsUrl + categoryShort,
