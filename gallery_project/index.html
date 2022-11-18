@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Furry Family Photos</title>
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+  </head>
+	<link href="https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+</head>
+<body>
+	<header>
+		<!-- Navbar -->
+		<nav class="navbar navbar-expand-sm">
+			<div class="container-fluid">
+				<a class="navbar-brand ms-auto fw-bold fs-1 text-uppercase" id="brand-name" href="index.html">Furry Family</a>
+				<button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+			      <span class="navbar-toggler-icon"></span>
+			    </button>
+			</div>
+			<!-- Supported content -->
+<!-- 			<div class="collapse navbar-collapse" id="navbarSupportedContent">
+				<ul class="navbar-nav me-3 mb-2 mb-lg-0">
+					<li class="nav-item">
+						<a class="nav-link">Gallery</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="#">About</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="#">Contact</a>
+					</li>
+				</ul>
+			</div> -->
+
+			<!-- Offcanvas -->
+			<div class="offcanvas offcanvas-end" tabindex="-1" id="navbarSupportedContent" aria-labelledby="offcanvasNavbarLabel">
+	      		<div class="offcanvas-header flex-row-reverse">
+			        <!-- <h5 class="offcanvas-title" id="offcanvasNavbarLabel"></h5> -->
+			        <button type="button" class="btn-close fs-1" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+	      		</div>
+	      		<div class="offcanvas-body">
+			        <ul class="navbar-nav justify-content-end flex-grow-1 ms-4">
+						<li class="nav-item">
+							<a class="nav-link">Gallery</a>
+							<div class="d-sm-none border-bottom"></div>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" href="#">About</a>
+							<div class="d-sm-none border-bottom"></div>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" href="#">Contact</a>
+						</li>
+			      	</ul>
+		      	</div>
+	      	</div><!-- End Offcanvas -->
+		</nav><!-- End Navbar -->
+	</header>
+
+	<!-- Main content -->
+	<div id="main-content" class="container text-center">
+		<!-- Home snippet -->
+		<div id="jumbotron">
+			<img src="https://via.placeholder.com/550x300" atl="background image" class="img-fluid d-block d-sm-none">
+		</div>
+		<div class="">
+			<p class="fs-2 mx-5 my-4 p-5">Why be mean to animals when they treat you better than people...</p>
+		</div>
+		<div id="home-tiles">
+			<div class="row">
+				<div class="col-md-3 col-sm-6 col-xs-12">
+					<a href="#"><div id="potato-tile"><span>Potato</span></div></a>
+				</div>
+				<div class="col-md-3 col-sm-6 col-xs-12">
+					<a href="#"><div id="may-tile"><span>May</span></div></a>
+				</div>
+				<div class="col-md-3 col-sm-6 col-xs-12">
+					<a href=""><div id="pumkin-tile"><span>Pumkin</span></div></a>
+				</div>
+				<div class="col-md-3 d-none d-md-block align-self-end">
+			      	<a href="">Want to see more?</a>
+			    </div>
+				<div class="col-md-3 col-sm-6 col-xs-12">
+					<a href="#"><div id="apple-tile"><span>Apple</span></div></a>
+				</div>
+				<div class="col-md-3 col-sm-6 col-xs-12">
+					<a href="#"><div id="yam-tile"><span>Yam</span></div></a>
+				</div>
+				<div class="col-md-3 col-sm-6 col-xs-12">
+					<a href="#"><div id="coffee-tile"><span>Coffee</span></div></a>
+				</div>
+			</div>
+		</div> <!-- End of #home-tiles -->
+	</div> <!-- End of #main-content -->
+
+	<!-- Footer -->
+	<footer id="panel-footer">
+		<p class="text-center text-muted">&copy; 2022 Company, Inc</p>
+	</footer> <!-- End footer -->
+
+	<script src="js/jquery-3.6.1.min.js"></script>
+	<script src="js/bootstrap.min.js"></script>
+</body>
+</html>
